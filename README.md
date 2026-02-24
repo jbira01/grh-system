@@ -1,21 +1,16 @@
-Voici une version améliorée, plus professionnelle et prête à copier-coller dans ton `README.md` 👇
-
----
-
-````markdown
 <div align="center">
 
 # 🚀 GRH-System  
 ### Système Intégré de Gestion des Ressources Humaines (ERP)
 
-![PHP](https://img.shields.io/badge/PHP-8.2%2B-777BB4?logo=php&logoColor=white)
-![Laravel](https://img.shields.io/badge/Laravel-11.x-FF2D20?logo=laravel&logoColor=white)
-![Filament](https://img.shields.io/badge/Filament-v3-FBBF24?logo=laravel&logoColor=black)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Academic_Project-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
+![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-11-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![Livewire](https://img.shields.io/badge/Livewire-v3-4E56A6?style=for-the-badge)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Academic_Project-blue?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-**Projet de Fin d'Études (PFE)**  
+**Projet**  
 Développé par **Yasser Jabir** – Développement Digital Full Stack (OFPPT)
 
 </div>
@@ -141,7 +136,7 @@ Développée avec une architecture moderne basée sur Laravel et l’écosystèm
 ```bash
 git clone https://github.com/VOTRE_NOM_UTILISATEUR/grh-system.git
 cd grh-system
-````
+```
 
 ---
 
@@ -209,26 +204,26 @@ http://127.0.0.1:8000/app/login
 
 ## 🔑 Comptes de Test
 
-| Rôle           | Email                                 | Mot de passe |
-| -------------- | ------------------------------------- | ------------ |
-| Administrateur | [admin@grh.com](mailto:admin@grh.com) | password123  |
+| Rôle | Email | Mot de passe |
+|------|-------|--------------|
+| Administrateur | admin@grh.com | password123 |
 
 ---
 
 ## 📈 Améliorations Futures
 
-* Module d’évaluation des performances
-* Statistiques avancées RH
-* Tableau de bord analytique
-* Notifications en temps réel
-* Déploiement cloud (Docker / VPS)
+- Module d’évaluation des performances
+- Statistiques avancées RH
+- Tableau de bord analytique
+- Notifications en temps réel
+- Déploiement cloud (Docker / VPS)
 
 ---
 
 ## 👨‍💻 Auteur
 
-**Yasser Jabir**
-Développeur Full Stack
+**Yasser Jabir**  
+Développeur Full Stack  
 Projet réalisé dans le cadre du cursus OFPPT – Développement Digital
 
 ---
@@ -236,6 +231,3 @@ Projet réalisé dans le cadre du cursus OFPPT – Développement Digital
 ## 📄 Licence
 
 Ce projet est distribué sous licence MIT.
-
-```
-
