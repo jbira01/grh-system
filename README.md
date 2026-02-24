@@ -1,144 +1,241 @@
-
-```markdown
-<div align="center">
-  
-  # 🚀 GRH-System
-  **Système Intégré de Gestion des Ressources Humaines (ERP)**
-
-  [![PHP Version](https://img.shields.io/badge/PHP-8.2%2B-777BB4?logo=php)](https://www.php.net/)
-  [![Laravel](https://img.shields.io/badge/Laravel-FF2D20?logo=laravel&logoColor=white)](https://laravel.com)
-  [![Filament](https://img.shields.io/badge/Filament-FBBF24?logo=laravel&logoColor=black)](https://filamentphp.com)
-  [![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)](https://www.mysql.com/)
-  [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-
-  *Projet de Fin d'Études (PFE) - Développé par Yasser Jabir (OFPPT)*
-
-</div>
-
-<br>
-
-## 📖 À propos du projet
-
-**GRH-System** est une application web centralisée conçue pour automatiser et optimiser les processus administratifs des ressources humaines. Développée avec la stack **TALL** (Tailwind, Alpine.js, Laravel, Livewire) et **FilamentPHP**, elle offre une interface d'administration robuste et une expérience utilisateur fluide.
-
-Ce projet résout les problématiques de gestion manuelle en dématérialisant les dossiers du personnel, le suivi du temps de travail, les absences et la génération de la paie.
-
-## ✨ Fonctionnalités Principales
-
-🔐 **Sécurité & Contrôle d'Accès (RBAC)**
-- Rôles stricts : `Administrateur` et `Employé` (propulsé par Spatie Permissions).
-- Isolation des données : un employé n'a accès qu'à son propre espace.
-
-👥 **Gestion du Personnel**
-- Opérations CRUD complètes sur les dossiers des employés.
-- Suivi des contrats, départements et postes.
-
-⏱️ **Système de Pointage Temps Réel**
-- Widget interactif pour pointer l'arrivée et le départ.
-- Horodatage sécurisé côté serveur (anti-fraude).
-- Exportation Excel (`.xlsx`) des présences pour la comptabilité.
-
-🏖️ **Gestion des Congés**
-- Flux de demande de congés par les employés.
-- Validation, refus et suivi des soldes par l'administration.
-
-📄 **Gestion de la Paie**
-- Calcul automatisé des salaires.
-- Génération de bulletins de paie au format PDF.
-
-## 🛠️ Stack Technique
-
-- **Backend :** Laravel 11.x, PHP 8.2+
-- **Frontend / Panel Admin :** FilamentPHP v3, Livewire v3, Alpine.js, Tailwind CSS
-- **Base de données :** MySQL
-- **Packages clés :** `spatie/laravel-permission`, `pxlrbt/filament-excel`, `barryvdh/laravel-dompdf`
+Voici une version améliorée, plus professionnelle et prête à copier-coller dans ton `README.md` 👇
 
 ---
 
-## 🚀 Guide d'Installation
+````markdown
+<div align="center">
 
-Suivez ces étapes pour installer le projet en local (idéalement sous [Laragon](https://laragon.org/)).
+# 🚀 GRH-System  
+### Système Intégré de Gestion des Ressources Humaines (ERP)
 
-### 1. Prérequis
-Assurez-vous d'avoir installé sur votre machine :
-- PHP >= 8.2 (avec l'extension `gd` activée)
+![PHP](https://img.shields.io/badge/PHP-8.2%2B-777BB4?logo=php&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-11.x-FF2D20?logo=laravel&logoColor=white)
+![Filament](https://img.shields.io/badge/Filament-v3-FBBF24?logo=laravel&logoColor=black)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Academic_Project-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+**Projet de Fin d'Études (PFE)**  
+Développé par **Yasser Jabir** – Développement Digital Full Stack (OFPPT)
+
+</div>
+
+---
+
+## 📖 Présentation
+
+**GRH-System** est une application web ERP dédiée à la gestion centralisée des ressources humaines.  
+Elle permet d’automatiser les processus administratifs liés au personnel : gestion des employés, suivi du temps de travail, gestion des congés et génération de la paie.
+
+Développée avec une architecture moderne basée sur Laravel et l’écosystème TALL, l’application garantit sécurité, performance et maintenabilité.
+
+---
+
+## 🎯 Objectifs du Projet
+
+- Digitaliser les processus RH manuels
+- Centraliser les données des employés
+- Sécuriser l’accès aux informations sensibles
+- Automatiser le calcul et la génération des bulletins de paie
+- Fournir un panel d’administration professionnel
+
+---
+
+## ✨ Fonctionnalités
+
+### 🔐 Gestion des Rôles & Permissions (RBAC)
+- Deux rôles principaux : **Administrateur** et **Employé**
+- Gestion des permissions via Spatie Laravel Permission
+- Isolation stricte des données par utilisateur
+
+### 👥 Gestion du Personnel
+- CRUD complet des employés
+- Gestion des départements et postes
+- Suivi des contrats
+
+### ⏱️ Système de Pointage
+- Enregistrement d’arrivée et départ en temps réel
+- Horodatage sécurisé côté serveur
+- Export des présences au format Excel (.xlsx)
+
+### 🏖️ Gestion des Congés
+- Soumission de demandes par les employés
+- Validation / Refus par l’administration
+- Suivi automatique des soldes
+
+### 💰 Gestion de la Paie
+- Calcul automatisé des salaires
+- Génération de bulletins de paie en PDF
+- Archivage des fiches de paie
+
+---
+
+## 🏗️ Architecture & Conception
+
+- Architecture **MVC (Model-View-Controller)**
+- Backend structuré avec Laravel 11
+- Panel d’administration basé sur FilamentPHP v3
+- Composants dynamiques via Livewire
+- Séparation logique des responsabilités
+- Sécurisation des routes via Middleware & Policies
+
+---
+
+## 🔒 Sécurité
+
+- Hashage sécurisé des mots de passe (bcrypt)
+- Protection CSRF intégrée
+- Middleware d’authentification
+- Gestion des accès basée sur rôles & permissions
+- Horodatage serveur pour éviter la fraude au pointage
+
+---
+
+## 🛠️ Stack Technique
+
+**Backend**
+- PHP 8.2+
+- Laravel 11.x
+
+**Frontend / Admin Panel**
+- FilamentPHP v3
+- Livewire v3
+- Alpine.js
+- Tailwind CSS
+
+**Base de données**
+- MySQL
+
+**Packages principaux**
+- spatie/laravel-permission
+- pxlrbt/filament-excel
+- barryvdh/laravel-dompdf
+
+---
+
+## 📸 Aperçu de l’Application
+
+*(Ajoutez ici vos captures d’écran)*
+
+- Dashboard Administrateur
+- Gestion des employés
+- Module de congés
+- Génération PDF des fiches de paie
+
+---
+
+## 🚀 Installation en Local
+
+### 1️⃣ Prérequis
+
+- PHP >= 8.2
 - Composer
 - Node.js & NPM
 - MySQL
+- Environnement local recommandé : Laragon ou XAMPP
 
-### 2. Cloner le dépôt
+---
+
+### 2️⃣ Cloner le projet
+
 ```bash
-git clone [https://github.com/VOTRE_NOM_UTILISATEUR/grh-system.git](https://github.com/VOTRE_NOM_UTILISATEUR/grh-system.git)
+git clone https://github.com/VOTRE_NOM_UTILISATEUR/grh-system.git
 cd grh-system
+````
 
-```
+---
 
-### 3. Installer les dépendances
+### 3️⃣ Installer les dépendances
 
 ```bash
 composer install
 npm install
 npm run build
-
 ```
 
-### 4. Configuration de l'environnement
+---
 
-Copiez le fichier d'exemple et générez la clé de l'application :
+### 4️⃣ Configuration
 
 ```bash
 cp .env.example .env
 php artisan key:generate
-
 ```
 
-Configurez votre fichier `.env` avec vos identifiants de base de données :
+Modifier le fichier `.env` :
 
-```ini
+```env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=grh_system
 DB_USERNAME=root
 DB_PASSWORD=
-
 ```
 
-### 5. Migration et Jeu d'essai (Seeding)
+---
 
-Créez la base de données `grh_system` dans votre SGBD, puis lancez les migrations avec le seeder pour créer l'architecture et les comptes par défaut :
+### 5️⃣ Migration & Seeder
+
+Créer la base de données `grh_system`, puis exécuter :
 
 ```bash
 php artisan migrate:fresh --seed
-
 ```
 
-### 6. Lier le stockage (Pour les PDF et images)
+---
+
+### 6️⃣ Lier le stockage
 
 ```bash
 php artisan storage:link
-
 ```
 
 ---
 
-## 🔑 Identifiants de Test (Générés par le Seeder)
+### 7️⃣ Lancer le serveur
 
-Le système génère automatiquement deux comptes pour évaluer les différents rôles. Accédez au panel d'administration via : `http://votre-domaine-local/app/login`
+```bash
+php artisan serve
+```
 
-| Rôle | Email | Mot de passe | Accès |
-| --- | --- | --- | --- |
-| **Administrateur** | `admin@grh.com` | `password123` | Accès total (Panel complet) |
+Accès au panel :
+
+```
+http://127.0.0.1:8000/app/login
+```
 
 ---
 
+## 🔑 Comptes de Test
+
+| Rôle           | Email                                 | Mot de passe |
+| -------------- | ------------------------------------- | ------------ |
+| Administrateur | [admin@grh.com](mailto:admin@grh.com) | password123  |
+
+---
+
+## 📈 Améliorations Futures
+
+* Module d’évaluation des performances
+* Statistiques avancées RH
+* Tableau de bord analytique
+* Notifications en temps réel
+* Déploiement cloud (Docker / VPS)
+
+---
 
 ## 👨‍💻 Auteur
 
 **Yasser Jabir**
-
-* Projet réalisé dans le cadre du cursus de Développement Digital Full Stack.
+Développeur Full Stack
+Projet réalisé dans le cadre du cursus OFPPT – Développement Digital
 
 ---
 
+## 📄 Licence
+
+Ce projet est distribué sous licence MIT.
+
+```
 
