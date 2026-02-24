@@ -1,59 +1,144 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+```markdown
+<div align="center">
+  
+  # 🚀 GRH-System
+  **Système Intégré de Gestion des Ressources Humaines (ERP)**
 
-## About Laravel
+  [![PHP Version](https://img.shields.io/badge/PHP-8.2%2B-777BB4?logo=php)](https://www.php.net/)
+  [![Laravel](https://img.shields.io/badge/Laravel-FF2D20?logo=laravel&logoColor=white)](https://laravel.com)
+  [![Filament](https://img.shields.io/badge/Filament-FBBF24?logo=laravel&logoColor=black)](https://filamentphp.com)
+  [![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)](https://www.mysql.com/)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+  *Projet de Fin d'Études (PFE) - Développé par Yasser Jabir (OFPPT)*
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+</div>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<br>
 
-## Learning Laravel
+## 📖 À propos du projet
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+**GRH-System** est une application web centralisée conçue pour automatiser et optimiser les processus administratifs des ressources humaines. Développée avec la stack **TALL** (Tailwind, Alpine.js, Laravel, Livewire) et **FilamentPHP**, elle offre une interface d'administration robuste et une expérience utilisateur fluide.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Ce projet résout les problématiques de gestion manuelle en dématérialisant les dossiers du personnel, le suivi du temps de travail, les absences et la génération de la paie.
 
-## Laravel Sponsors
+## ✨ Fonctionnalités Principales
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+🔐 **Sécurité & Contrôle d'Accès (RBAC)**
+- Rôles stricts : `Administrateur` et `Employé` (propulsé par Spatie Permissions).
+- Isolation des données : un employé n'a accès qu'à son propre espace.
 
-### Premium Partners
+👥 **Gestion du Personnel**
+- Opérations CRUD complètes sur les dossiers des employés.
+- Suivi des contrats, départements et postes.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+⏱️ **Système de Pointage Temps Réel**
+- Widget interactif pour pointer l'arrivée et le départ.
+- Horodatage sécurisé côté serveur (anti-fraude).
+- Exportation Excel (`.xlsx`) des présences pour la comptabilité.
 
-## Contributing
+🏖️ **Gestion des Congés**
+- Flux de demande de congés par les employés.
+- Validation, refus et suivi des soldes par l'administration.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+📄 **Gestion de la Paie**
+- Calcul automatisé des salaires.
+- Génération de bulletins de paie au format PDF.
 
-## Code of Conduct
+## 🛠️ Stack Technique
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- **Backend :** Laravel 11.x, PHP 8.2+
+- **Frontend / Panel Admin :** FilamentPHP v3, Livewire v3, Alpine.js, Tailwind CSS
+- **Base de données :** MySQL
+- **Packages clés :** `spatie/laravel-permission`, `pxlrbt/filament-excel`, `barryvdh/laravel-dompdf`
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 🚀 Guide d'Installation
 
-## License
+Suivez ces étapes pour installer le projet en local (idéalement sous [Laragon](https://laragon.org/)).
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 1. Prérequis
+Assurez-vous d'avoir installé sur votre machine :
+- PHP >= 8.2 (avec l'extension `gd` activée)
+- Composer
+- Node.js & NPM
+- MySQL
+
+### 2. Cloner le dépôt
+```bash
+git clone [https://github.com/VOTRE_NOM_UTILISATEUR/grh-system.git](https://github.com/VOTRE_NOM_UTILISATEUR/grh-system.git)
+cd grh-system
+
+```
+
+### 3. Installer les dépendances
+
+```bash
+composer install
+npm install
+npm run build
+
+```
+
+### 4. Configuration de l'environnement
+
+Copiez le fichier d'exemple et générez la clé de l'application :
+
+```bash
+cp .env.example .env
+php artisan key:generate
+
+```
+
+Configurez votre fichier `.env` avec vos identifiants de base de données :
+
+```ini
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=grh_system
+DB_USERNAME=root
+DB_PASSWORD=
+
+```
+
+### 5. Migration et Jeu d'essai (Seeding)
+
+Créez la base de données `grh_system` dans votre SGBD, puis lancez les migrations avec le seeder pour créer l'architecture et les comptes par défaut :
+
+```bash
+php artisan migrate:fresh --seed
+
+```
+
+### 6. Lier le stockage (Pour les PDF et images)
+
+```bash
+php artisan storage:link
+
+```
+
+---
+
+## 🔑 Identifiants de Test (Générés par le Seeder)
+
+Le système génère automatiquement deux comptes pour évaluer les différents rôles. Accédez au panel d'administration via : `http://votre-domaine-local/app/login`
+
+| Rôle | Email | Mot de passe | Accès |
+| --- | --- | --- | --- |
+| **Administrateur** | `admin@grh.com` | `password123` | Accès total (Panel complet) |
+
+---
+
+
+## 👨‍💻 Auteur
+
+**Yasser Jabir**
+
+* Projet réalisé dans le cadre du cursus de Développement Digital Full Stack.
+
+---
+
+
