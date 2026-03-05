@@ -24,26 +24,27 @@ class AdminPanelProvider extends PanelProvider
     {
         return $panel
             ->default()
-            ->id('admin')
+            ->id('app')
             ->path('app')
             ->login()
             
-            // 👇 1. Changer le Nom du projet (en haut à gauche)
-            ->brandName('GRH System')
-            ->brandLogo(asset('image/logo.png')) 
-            ->brandLogoHeight('3rem')
-            ->favicon(asset('image/logo.png')) 
-            // 👇 2. Cacher le pied de page (Version, Github, Docs) avec du CSS
-            ->renderHook(
-                'panels::styles.after',
-                fn (): string => '<style>
-                    .fi-sidebar-footer { display: none !important; }
-                </style>'
-            )
-
+            // 1. Thème sombre et Top Navigation
+            ->darkMode(true)
+            ->topNavigation() // 👈 C'est cette ligne qui transforme TOUTE la page !
+            
+            // 2. L'identité de votre ERP
+            ->brandName('GRH Workspace')
+            ->brandLogo(asset('image/logo.png'))
+            ->brandLogoHeight('2.5rem')
+            ->favicon(asset('image/logo.png'))
+            
+            // 3. Typographie et Couleurs modernes
+            ->font('Plus Jakarta Sans')
             ->colors([
-                'primary' => Color::Blue, // Vous pouvez changer la couleur ici aussi
+                'primary' => Color::Indigo,
+                'gray' => Color::Slate,
             ])
+            
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->pages([
@@ -52,7 +53,7 @@ class AdminPanelProvider extends PanelProvider
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
             ->widgets([
                 Widgets\AccountWidget::class,
-                // Widgets\FilamentInfoWidget::class, // 👈 3. Supprimez ou commentez cette ligne pour enlever le widget Filament du tableau de bord
+                \App\Filament\Widgets\PointagesChart::class,
             ])
             ->middleware([
                 EncryptCookies::class,
