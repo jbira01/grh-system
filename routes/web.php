@@ -11,3 +11,8 @@ Route::get('/bulletin/{paie}', function (Paie $paie) {
     // On lance le téléchargement
     return $pdf->download('Bulletin-'.$paie->employe->matricule.'-'.$paie->mois.'.pdf');
 })->name('paie.pdf');
+
+// Redirige automatiquement la racine du site vers le panel Filament
+Route::get('/', function () {
+    return redirect('/app');
+});
