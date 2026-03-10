@@ -9,4 +9,8 @@ use Filament\Resources\Pages\CreateRecord;
 class CreatePaie extends CreateRecord
 {
     protected static string $resource = PaieResource::class;
+    protected function getRedirectUrl(): string
+    {
+        return $this->getResource()::getUrl('index');
+    }
 }

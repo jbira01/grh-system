@@ -9,4 +9,8 @@ use Filament\Resources\Pages\CreateRecord;
 class CreateConge extends CreateRecord
 {
     protected static string $resource = CongeResource::class;
+    protected function getRedirectUrl(): string
+    {
+        return $this->getResource()::getUrl('index');
+    }
 }

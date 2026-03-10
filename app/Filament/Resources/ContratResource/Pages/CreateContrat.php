@@ -9,4 +9,9 @@ use Filament\Resources\Pages\CreateRecord;
 class CreateContrat extends CreateRecord
 {
     protected static string $resource = ContratResource::class;
+
+    protected function getRedirectUrl(): string
+    {
+        return $this->getResource()::getUrl('index');
+    }
 }
